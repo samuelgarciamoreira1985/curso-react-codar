@@ -6,6 +6,8 @@ import FirstComponent from './components/FirstComponent'
 import TemplateExpression from './components/TemplateExpression'
 // 5 - Hierarquia de componentes
 import MyCompnent from './components/MyComponent'
+// 6 - Eventos
+import Events from './components/Events'
 
 function App() {
   // 3 - Comentários
@@ -16,6 +18,7 @@ function App() {
       <FirstComponent/>
       <TemplateExpression/>
       <MyCompnent/>
+      <Events/>
     </div>
   )
 }
