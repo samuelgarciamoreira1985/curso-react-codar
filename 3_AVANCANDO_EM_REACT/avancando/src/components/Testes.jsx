@@ -3,6 +3,27 @@ import { useState } from "react";
 
 const Testes = ({descricao, valor, qualidade}) => {
 
+    const [listaLinguagens,setLinguagens] = useState([
+        {
+            id: 1,
+            description: "java"
+        },
+        {
+            id: 2,
+            description: "javascript"
+        },
+        {
+            id: 3,
+            description: "php"
+        }
+    ])
+
+    const deleteCursos = () =>{ 
+    const delRamdom = Math.floor(Math.random() * 4)
+    setLinguagens((prevCursos) =>
+        prevCursos.filter((user) => delRamdom !== user.id) 
+    )}
+    
 
     return (
         <div>
@@ -21,7 +42,14 @@ const Testes = ({descricao, valor, qualidade}) => {
                 <th>{qualidade}</th>
             </tbody>
            </table>
-               
+
+           <h2>Lista de Linguagens de programação</h2>
+           <ul>
+                {listaLinguagens.map((item) =>
+                    <li key={item.id}>{item.description}</li>
+                )}
+           </ul>
+               <button onClick={deleteCursos}>Deletar cursos</button>
         </div>
     )
 }
