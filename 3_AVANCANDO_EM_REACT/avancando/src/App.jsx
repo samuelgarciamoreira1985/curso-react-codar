@@ -4,6 +4,8 @@ import NovoCalculo from './components/NovoCalculo';
 import Produtos from './components/Produtos';
 import Testes from './components/Testes';
 import Testes2 from './components/Testes2';
+import Teste3 from './components/Teste3';
+import Animals from './components/Animals';
 
 // 2 - imagem em assets - importando
 import night from "./assets/night.jpg";
@@ -36,8 +38,21 @@ const linguages = [
 
 // 12 - Fragments
 import Fragment from './components/Fragment';
+// 13 - children
+import Container from './components/Container';
+// 14 - função em prop
+import ExecuteFunction from './components/ExecuteFunction';
 
 function App() {
+
+  const showMessage = () =>{
+    alert("Evento do componente pai")
+  }
+
+  const gapAnimals = () => {
+    alert("animais")
+  }
+
   return (
     <div className='App' style={{paddingBottom: "500px"}}>
       <h1>Avançando em React</h1>
@@ -71,6 +86,18 @@ function App() {
       ))}
       {/* 12 - Fragments */}
       <Fragment/>
+      {/* 13 - children */}
+      <Container>
+        <h2>Teste</h2>
+        <p>Meu container</p>
+      </Container>
+       <Teste3>
+         <input type="text" id="id_teste"/>
+         <button>cadastro</button>
+       </Teste3>
+       {/* 14 - função em prop */}
+       <ExecuteFunction myFunction={showMessage}/>
+       <Animals myFunction={gapAnimals}/>
     </div>
   )
 }
