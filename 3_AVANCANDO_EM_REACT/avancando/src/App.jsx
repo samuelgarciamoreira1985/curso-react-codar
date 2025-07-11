@@ -1,11 +1,10 @@
 import './App.css'
 import Logica from './components/Logica';
-import NovoCalculo from './components/NovoCalculo';
 import Produtos from './components/Produtos';
 import Testes from './components/Testes';
 import Testes2 from './components/Testes2';
-import Teste3 from './components/Teste3';
-import Animals from './components/Animals';
+import ExibeFilmes from './components/ExibeFilmes';
+import AlteraFilmes from './components/AlteraFilmes';
 
 // 2 - imagem em assets - importando
 import night from "./assets/night.jpg";
@@ -42,15 +41,25 @@ import Fragment from './components/Fragment';
 import Container from './components/Container';
 // 14 - função em prop
 import ExecuteFunction from './components/ExecuteFunction';
+// 15 - state lift
+import { useState } from 'react';
+import Message from './components/Message';
+import ChangeMessage from './components/ChangeMessage';
 
 function App() {
 
-  const showMessage = () =>{
-    alert("Evento do componente pai")
+  const [message, setMessage] = useState("")
+  const handleMessage = (msg) => {
+  setMessage(msg)
+}
+
+  const [exFilme,setExFilme] = useState("")
+  const alteraFilme = (msg) => {
+    setExFilme(msg)
   }
 
-  const gapAnimals = () => {
-    alert("animais")
+  const showMessage = () =>{
+    alert("Evento do componente pai")
   }
 
   return (
@@ -91,13 +100,13 @@ function App() {
         <h2>Teste</h2>
         <p>Meu container</p>
       </Container>
-       <Teste3>
-         <input type="text" id="id_teste"/>
-         <button>cadastro</button>
-       </Teste3>
        {/* 14 - função em prop */}
        <ExecuteFunction myFunction={showMessage}/>
-       <Animals myFunction={gapAnimals}/>
+       {/* 15 - state lift */}
+       <Message msg={message}/>
+       <ChangeMessage handleMessage={handleMessage}/>
+       <ExibeFilmes msg={exFilme}/>
+       <AlteraFilmes handleFilmes={alteraFilme}/>
     </div>
   )
 }
