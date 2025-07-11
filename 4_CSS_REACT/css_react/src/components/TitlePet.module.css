@@ -1,0 +1,10 @@
+.frase {
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gata {
+    color: white;
+    background-color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
