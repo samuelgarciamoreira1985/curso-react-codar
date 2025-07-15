@@ -58,3 +58,12 @@
     color: black;
     background-color: rgb(255, 254, 254);
 }
+
+#form-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+#form-footer {
+    padding: 2px;
+}

@@ -1,0 +1,27 @@
+#btn-calcular-media {
+    background-color: rgb(37, 98, 197);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    opacity: 1;
+    padding: .5rem 1rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 2px 20px 10px 20px;
+    width: 88%;
+}
+
+#btn-limpar {
+    background-color: rgb(206, 38, 38);
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    opacity: 1;
+    padding: .5rem 1rem;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 2px 2px 10px 20px;
+    width: 88%;
+}
