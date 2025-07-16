@@ -68,7 +68,8 @@ const FormDados = ({ calcAverage }) => {
                 <select id="selDiscipline">
                     {dataDisciplines.map((item) => (
                     <OptionsDiscipline key={item.id} optValue={item.discipline}/>
-                    ))}
+                    ))
+                    }
                 </select>
                 
             </div>

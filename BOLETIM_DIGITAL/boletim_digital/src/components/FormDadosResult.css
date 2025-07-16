@@ -101,3 +101,25 @@
     margin: 2px 20px 10px 20px;
     width: 88%;
 }
+
+.results-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    text-align: center;
+    background-color: rgb(152, 169, 152);
+}
+
+.results-footer h4 {
+    color: black;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+.results-footer h3 {
+    color: rgb(0, 81, 0);
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
