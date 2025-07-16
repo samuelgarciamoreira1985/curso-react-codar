@@ -20,7 +20,6 @@ const FormDados = ({ calcAverage }) => {
       inputRef.current.focus()
     }
   
-  
   const clearForm = (e) => {
     e.preventDefault()
     setDiscipline("")

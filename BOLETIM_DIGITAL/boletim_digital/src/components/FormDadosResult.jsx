@@ -38,8 +38,7 @@ const FormDadosResult = ({ resetOperaction, value1, value2, value3, value4, valu
 
         <div className="results-footer">
                 <h4>SITUAÇÃO</h4>
-                {/*{value5 < 5 ? () : ()}*/}
-                <h3>APROVADO</h3>
+                {value5 <= 5 ? (<h3 style={{color:"red"}}>REPROVADO</h3>) : (<h3 style={{color:"green"}}>APROVADO</h3>)}
         </div>
 
     </div>
