@@ -32,6 +32,7 @@
 
 .form-inputs > label {
     padding: 10px;
+    position: relative;
 }
 
 .form-inputs > label span {
@@ -105,4 +106,13 @@
 .form-footer a:hover {
     color: rgb(60, 60, 160);
     text-decoration: underline;
+}
+
+.form-inputs .icon {
+    position: absolute;
+    right: -25px;
+    top: 60%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 30px;
 }

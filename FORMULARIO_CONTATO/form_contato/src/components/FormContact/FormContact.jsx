@@ -1,3 +1,6 @@
+import { FaUser } from "react-icons/fa"
+import { MdEmail } from "react-icons/md"
+
 import { useState } from "react"
 import "./FormContact.css"
 
@@ -24,10 +27,12 @@ const FormContact = () => {
                 <label>
                     <span>Nome</span>
                     <input type="text" name="n-nameUser" id="id-nameUser" onChange={(e) => setUserName(e.target.value)} placeholder="Digite seu nome" required/>
+                    <FaUser className="icon"/>
                 </label>
                 <label>
                     <span>Endereço de Email</span>
                     <input type="email" name="n-email" id="id-email" onChange={(e) => setUserEmail(e.target.value)} placeholder="Digite seu email" required/>
+                    <MdEmail className="icon"/>
                 </label>
                 <label>
                     <span>Mensagem</span>
