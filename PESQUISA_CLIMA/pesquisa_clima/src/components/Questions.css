@@ -1,0 +1,42 @@
+.container-question {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+}
+
+.radio-response {
+    padding: 20px;
+}
+
+.radio-response svg {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.radio-response svg:hover {
+    fill: #7076f4;
+}
+
+.radio-response input:checked ~ svg {
+    fill: #7076f4;
+}
+
+.response-question {
+    text-align: center;
+    position: relative;
+}
+
+.response-question input {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.response-question span {
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-top: 0.4rem;
+}

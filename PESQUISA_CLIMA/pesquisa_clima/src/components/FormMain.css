@@ -1,0 +1,52 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-input {
+    padding: 10px;
+    position: relative;
+}
+
+.main-input label {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-input span {
+   font-weight: 600;
+   color: #777;
+   font-size: 0.9rem;
+   padding: 5px;
+}
+
+.main-input input {
+    width: 400px;
+    background-color: transparent;
+    border: none;
+    padding: .6rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0;
+    border-radius: 3px;
+}
+
+.main-input .email-feedback {
+    font-size: .7rem;
+    color: black;
+}
+
+.icon-form-main-name {
+    position: absolute;
+    right: 25px;
+    top: 55%;
+    font-size: 18px;
+}
+
+.icon-form-main-email {
+    position: absolute;
+    right: 25px;
+    top: 46%;
+    font-size: 18px;
+}

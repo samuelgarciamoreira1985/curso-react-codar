@@ -1,0 +1,53 @@
+.App {
+    padding: 10px;
+}
+
+.App h3 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: .2px .2px .2px black;
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+}
+
+.App p {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    background-color: #fff;
+    box-shadow: rgba(200, 200, 200, alpha);
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    max-width: 700px;
+    min-height: 250px;
+    margin: 0 auto;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    gap: .5rem;
+}
+
+.form-buttons button {
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    border-radius: 5px;
+    background-color: #dfdfdf;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    width: 100px;
+    color: #3c3b3b;
+    text-shadow: 0px 0px 0px rgb(0, 0, 0);
+    align-items: center;
+}
+
+.form-buttons button:hover {
+    background-color: #cfcfcf;
+}
