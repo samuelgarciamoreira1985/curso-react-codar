@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Requestions from './components/Requestions'
+import { useFetch } from './hooks/useFetch'
 
 import './App.css'
 
@@ -9,7 +10,10 @@ function App() {
   // 1 - resgatando dados
   const [products, setProducts] = useState([])
 
-  useEffect(() => {
+  // 4 - custom hook
+  const { data: items, httpConfig } = useFetch(url)
+
+  /*useEffect(() => {
     
     async function getData() {
       const res = await fetch(url)
@@ -19,7 +23,7 @@ function App() {
     }
     getData()
 
-  },[])
+  },[])*/
 
   // 2 - envio de dados
   const [name, setName] = useState("")
@@ -28,18 +32,21 @@ function App() {
   const handleSubmit = async (e) => {
     e.preventDefault()
 
-    const product = {
+      const product = {
       name,
       price
     }
 
-    const res = await fetch(url, {
+    // 5 - refatorando post
+    httpConfig(product, "POST")
+
+    /*const res = await fetch(url, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify(product),
-    })
+    })*/
 
     // 3 - carregamento dinâmico
     const addedProduct = await res.json()
@@ -52,11 +59,11 @@ function App() {
       <h1>HTTP em React</h1>
       {/* 1 - resgate de dados */}
       <ul>
-        {products.map((product) => (
+        {items && items.map((product) => (
           <li key={product.id}>{product.name} - R${product.price}</li>
         ))}
       </ul>
-      {/* <Requestions/> */}
+      {/* <Requestions/> */} 
       {/* 2 - envio de dados */}
       <div className='add-product'>
         <form onSubmit={handleSubmit}>
