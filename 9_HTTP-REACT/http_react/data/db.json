@@ -1,19 +1,54 @@
 {
-    "products": [
-        {
-            "name" : "capa de chuva",
-            "price": "50.50",
-            "id": 5
-        },
-        {
-            "name" : "teclado",
-            "price": "110",
-            "id": 6
-        },
-        {
-            "name" : "cadeira",
-            "price": "200",
-            "id": 7
-        }
-    ]
+  "products": [
+    {
+      "name": "capa de chuva",
+      "price": "50.50",
+      "id": "5"
+    },
+    {
+      "name": "teclado",
+      "price": "110",
+      "id": "6"
+    },
+    {
+      "name": "cadeira",
+      "price": "200",
+      "id": "7"
+    },
+    {
+      "id": "4b86",
+      "name": "telefone",
+      "price": "23"
+    },
+    {
+      "id": "1edc",
+      "name": "CADERNO",
+      "price": "34"
+    },
+    {
+      "id": "b4ab",
+      "name": "caneta",
+      "price": "10"
+    },
+    {
+      "id": "3dc0",
+      "name": "lapis",
+      "price": "333"
+    },
+    {
+      "id": "2dab",
+      "name": "mouse",
+      "price": "90"
+    },
+    {
+      "id": "5e84",
+      "name": "dado",
+      "price": "11"
+    },
+    {
+      "id": "4d62",
+      "name": "saop",
+      "price": "123"
+    }
+  ]
 }

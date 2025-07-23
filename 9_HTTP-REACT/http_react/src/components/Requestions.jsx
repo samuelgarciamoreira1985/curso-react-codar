@@ -1,30 +1,28 @@
 import { useState, useEffect } from "react"
 
-const endereco = "http://localhost:3000/products"
+const url = "https://viacep.com.br/ws/01001000/json/"
 
 const Requestions = () => {
 
-    const [produto, setProduto] = useState([])
+    const [cep, setCep] = useState([])
 
     useEffect(() => {
-        async function buscaDados() {
-            const request = await fetch(endereco)
+        async function getCep() {
+            const request = await fetch(url)
             const response = await request.json()
-            setProduto(response)
+            setCep(response)
+            
         }
-        buscaDados()
+        getCep()
+        console.log(cep)
     },[])
+
 
   return (
 
     <div>
-        <h1>Teste de Requisição</h1>
-        <h2>Lista de produtos</h2>
-        <ul>
-            {produto.map((item) => (
-                <li key={item.id}>{item.name} e {item.price}</li>
-            ))}
-        </ul>
+        <h2>Cep consultado</h2>
+        
     </div>
 
   )
