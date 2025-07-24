@@ -127,6 +127,11 @@
       "id": "f11b",
       "name": "cobertor",
       "price": "12"
+    },
+    {
+      "id": "1800",
+      "name": "fronha",
+      "price": "34"
     }
   ]
 }
