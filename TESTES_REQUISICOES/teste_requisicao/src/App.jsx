@@ -25,7 +25,7 @@ function App() {
     }
     httpSettings(games, "POST")
 
-    const gameAdd = await response.json()
+    const gameAdd = await res.json()
     setGames((prevGames) => [...prevGames,gameAdd])
   }
 

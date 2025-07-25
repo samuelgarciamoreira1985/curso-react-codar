@@ -6,6 +6,7 @@ export const useFetch = (url) => {
 
     const [config, setConfig] = useState(null)
     const [method, setMethod] = useState(null)
+    const [callFetch, setCallFetch] = useState(null)
 
     const httpSettings = (data, method) => {
         if (method === "POST") {
@@ -26,7 +27,7 @@ export const useFetch = (url) => {
             setData(response)
         }
         getGames()
-    },[url])// Fim Get...
+    },[url,callFetch])// Fim Get...
 
     //POST
     useEffect(() => {
@@ -34,9 +35,10 @@ export const useFetch = (url) => {
         let json
         if (method === "POST") {
             let fetchOptions = [url, config]
-            const response = await fetch(...fetchOptions)
-            json = await response.json()
+            const res = await fetch(...fetchOptions)
+            json = await res.json()
         }
+        setCallFetch(json)
         }
         httpPOSt()
     },[config, method, url])
