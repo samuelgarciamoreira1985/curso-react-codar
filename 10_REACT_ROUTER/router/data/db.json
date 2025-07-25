@@ -1,0 +1,137 @@
+{
+  "products": [
+    {
+      "name": "capa de chuva",
+      "price": "50.50",
+      "id": "5"
+    },
+    {
+      "name": "teclado",
+      "price": "110",
+      "id": "6"
+    },
+    {
+      "name": "cadeira",
+      "price": "200",
+      "id": "7"
+    },
+    {
+      "id": "4b86",
+      "name": "telefone",
+      "price": "23"
+    },
+    {
+      "id": "1edc",
+      "name": "CADERNO",
+      "price": "34"
+    },
+    {
+      "id": "b4ab",
+      "name": "caneta",
+      "price": "10"
+    },
+    {
+      "id": "3dc0",
+      "name": "lapis",
+      "price": "333"
+    },
+    {
+      "id": "2dab",
+      "name": "mouse",
+      "price": "90"
+    },
+    {
+      "id": "5e84",
+      "name": "dado",
+      "price": "11"
+    },
+    {
+      "id": "4d62",
+      "name": "saop",
+      "price": "123"
+    },
+    {
+      "0": {
+        "name": "capa de chuva",
+        "price": "50.50",
+        "id": "5"
+      },
+      "1": {
+        "name": "teclado",
+        "price": "110",
+        "id": "6"
+      },
+      "2": {
+        "name": "cadeira",
+        "price": "200",
+        "id": "7"
+      },
+      "3": {
+        "id": "4b86",
+        "name": "telefone",
+        "price": "23"
+      },
+      "4": {
+        "id": "1edc",
+        "name": "CADERNO",
+        "price": "34"
+      },
+      "5": {
+        "id": "b4ab",
+        "name": "caneta",
+        "price": "10"
+      },
+      "6": {
+        "id": "3dc0",
+        "name": "lapis",
+        "price": "333"
+      },
+      "7": {
+        "id": "2dab",
+        "name": "mouse",
+        "price": "90"
+      },
+      "8": {
+        "id": "5e84",
+        "name": "dado",
+        "price": "11"
+      },
+      "9": {
+        "id": "4d62",
+        "name": "saop",
+        "price": "123"
+      },
+      "id": "e13c"
+    },
+    {
+      "id": "4b20",
+      "nameProduto": "celular",
+      "precoProduto": "233"
+    },
+    {
+      "id": "0cc1",
+      "name": "blusa",
+      "price": "221"
+    },
+    {
+      "id": "9e16",
+      "name": "gato",
+      "price": "23"
+    },
+    {
+      "id": "cfb1",
+      "name": "ffgg",
+      "price": "55"
+    },
+    {
+      "id": "f11b",
+      "name": "cobertor",
+      "price": "12"
+    },
+    {
+      "id": "1800",
+      "name": "fronha",
+      "price": "34"
+    }
+  ]
+}
