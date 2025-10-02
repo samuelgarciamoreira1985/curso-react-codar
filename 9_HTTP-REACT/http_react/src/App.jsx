@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import Requestions from './components/Requestions'
 import { useFetch } from './hooks/useFetch'
 import TesteReducer from './components/TesteReducer'
+import Login from './components/Login'
 
 import './App.css'
 
@@ -91,6 +92,7 @@ function App() {
           {!loading && <input type="submit" value="Criar"/>}
         </form>
         <TesteReducer/>
+        <Login/>
       </div>
     </div>
 
