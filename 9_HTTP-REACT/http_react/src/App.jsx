@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Requestions from './components/Requestions'
 import { useFetch } from './hooks/useFetch'
+import TesteReducer from './components/TesteReducer'
 
 import './App.css'
 
@@ -89,6 +90,7 @@ function App() {
           {loading && <input type="submit" disabled value="Aguarde"/>}
           {!loading && <input type="submit" value="Criar"/>}
         </form>
+        <TesteReducer/>
       </div>
     </div>
 
